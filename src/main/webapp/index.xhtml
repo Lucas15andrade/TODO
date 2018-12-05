@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+
+    <h:head>
+        <title>TODO</title>   
+
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <link href="resources/style.css" rel="stylesheet" type="text/css"/>
+
+    </h:head>
+    <!--
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    -->
+    <h:body>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form" style="width: 400px; margin: 0 auto">
+                    <h:form>
+                        <div class="form-group">
+                            <p><b>Adicionar TODO</b></p>
+
+                            <!-- Utilizando boostrap -->
+                            <input type="text" class="form-control" aria-describedby="todoHelp" placeholder="TODO" jsf:required="true" jsf:maxlength="20"
+                                   jsf:value="#{todo.listaConteduo.conteudo}"/>
+                        </div>
+
+                        <button type="submit" jsf:action="#{todo.salvar()}" class="btn btn-primary">Salvar</button>
+
+                    </h:form>
+                    <br/>
+                    <br/>
+                    <h:form>
+                        <p:dataScroller value="#{todo.lista}" var="lista">
+                            <f:facet name="header">
+                                Desça para ver mais
+                            </f:facet>
+
+                            <h:panelGrid columns="2" style="width:100%" columnClasses="conteudo,acoes">
+                                <h:outputText value="#{lista.conteudo}" style="font-weight: bold"/>
+                                <p:outputPanel>
+                                    <h:panelGrid columns="2" cellpadding="5">
+
+                                        <p:column headerText="Remover">
+                                            <p:growl id="growl" life="2000"/>
+                                            <h:commandButton styleClass="btn btn-danger" actionListener="#{todo.deletar(lista)}" value="Excluir"/>
+                                            <h:commandButton styleClass="btn btn-success" actionListener="#{todo.editar(lista)}" value="Editar"/>
+                                        </p:column>
+
+                                    </h:panelGrid>
+                                    <hr/>
+
+                                </p:outputPanel>
+                            </h:panelGrid>
+                        </p:dataScroller>
+                    </h:form>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </h:body>
+</html>

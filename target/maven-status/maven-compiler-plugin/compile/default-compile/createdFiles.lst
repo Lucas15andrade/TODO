@@ -1,0 +1,11 @@
+interfaces\IGenericDao.class
+bean\Todo.class
+util\HibernateUtil.class
+dao\IListaDaoImp.class
+util\TestesHibernate.class
+dao\GenericDaoImpl$1.class
+interfaces\IListaDao.class
+model\Lista.class
+dao\GenericDaoImpl.class
+util\ConectaHibernateMySQL.class
+dao\GenericDaoImpl$2.class
