@@ -16,12 +16,6 @@
     
     <dependencies>
         <dependency>
-            <groupId>com.mycompany</groupId>
-            <artifactId>ProjetoSextaFeira</artifactId>
-            <version>1.0</version>
-            <type>war</type>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
