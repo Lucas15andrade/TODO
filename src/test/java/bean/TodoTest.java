@@ -45,97 +45,97 @@ public class TodoTest {
     /**
      * Test of getListaConteduo method, of class Todo.
      */
-    @Test
-    public void testGetListaConteduo() {
-        System.out.println("getListaConteduo");
-        Todo instance = new Todo();
-        Lista expResult = new Lista();
-        Lista result = instance.getListaConteduo();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setListaConteduo method, of class Todo.
-     */
-    @Test
-    public void testSetListaConteduo() {
-        System.out.println("setListaConteduo");
-        Lista listaConteduo = new Lista();
-        Todo instance = new Todo();
-        instance.setListaConteduo(listaConteduo);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getLista method, of class Todo.
-     */
-    @Test
-    public void testGetLista() {
-        System.out.println("getLista");
-        Todo instance = new Todo();
-        ArrayList expResult = new ArrayList<>();
-        ArrayList result = (ArrayList) instance.getLista();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setLista method, of class Todo.
-     */
-    @Test
-    public void testSetLista() {
-        System.out.println("setLista");
-        List<Lista> lista = null;
-        Todo instance = new Todo();
-        instance.setLista(lista);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of salvar method, of class Todo.
-     */
-    @Test
-    public void testSalvar() {
-        System.out.println("salvar");
-        Todo instance = new Todo();
-        instance.salvar();
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of deletar method, of class Todo.
-     */
-    @Test
-    public void testDeletar() {
-        System.out.println("deletar");
-        IListaDao ld = new IListaDaoImp();
-        Lista listaDeletar = new Lista();
-        System.out.println("OBJETO: "+listaDeletar.getConteudo());
-        Todo instance = new Todo();
-        instance.setListaConteduo(listaDeletar);
-        instance.salvar();
-        instance.deletar(listaDeletar);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of editar method, of class Todo.
-     */
-    @Test
-    public void testEditar() {
-        System.out.println("editar");
-        Lista listaEditar = null;
-        Todo instance = new Todo();
-        instance.editar(listaEditar);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
+//    @Test
+//    public void testGetListaConteduo() {
+//        System.out.println("getListaConteduo");
+//        Todo instance = new Todo();
+//        Lista expResult = new Lista();
+//        Lista result = instance.getListaConteduo();
+//        assertEquals(expResult, result);
+//        // TODO review the generated test code and remove the default call to fail.
+//        //fail("The test case is a prototype.");
+//    }
+//
+//    /**
+//     * Test of setListaConteduo method, of class Todo.
+//     */
+//    @Test
+//    public void testSetListaConteduo() {
+//        System.out.println("setListaConteduo");
+//        Lista listaConteduo = new Lista();
+//        Todo instance = new Todo();
+//        instance.setListaConteduo(listaConteduo);
+//        // TODO review the generated test code and remove the default call to fail.
+//        //fail("The test case is a prototype.");
+//    }
+//
+//    /**
+//     * Test of getLista method, of class Todo.
+//     */
+//    @Test
+//    public void testGetLista() {
+//        System.out.println("getLista");
+//        Todo instance = new Todo();
+//        ArrayList expResult = new ArrayList<>();
+//        ArrayList result = (ArrayList) instance.getLista();
+//        assertEquals(expResult, result);
+//        // TODO review the generated test code and remove the default call to fail.
+//        //fail("The test case is a prototype.");
+//    }
+//
+//    /**
+//     * Test of setLista method, of class Todo.
+//     */
+//    @Test
+//    public void testSetLista() {
+//        System.out.println("setLista");
+//        List<Lista> lista = null;
+//        Todo instance = new Todo();
+//        instance.setLista(lista);
+//        // TODO review the generated test code and remove the default call to fail.
+//        //fail("The test case is a prototype.");
+//    }
+//
+//    /**
+//     * Test of salvar method, of class Todo.
+//     */
+//    @Test
+//    public void testSalvar() {
+//        System.out.println("salvar");
+//        Todo instance = new Todo();
+//        instance.salvar();
+//        // TODO review the generated test code and remove the default call to fail.
+//        //fail("The test case is a prototype.");
+//    }
+//
+//    /**
+//     * Test of deletar method, of class Todo.
+//     */
+//    @Test
+//    public void testDeletar() {
+//        System.out.println("deletar");
+//        IListaDao ld = new IListaDaoImp();
+//        Lista listaDeletar = new Lista();
+//        System.out.println("OBJETO: "+listaDeletar.getConteudo());
+//        Todo instance = new Todo();
+//        instance.setListaConteduo(listaDeletar);
+//        instance.salvar();
+//        instance.deletar(listaDeletar);
+//        // TODO review the generated test code and remove the default call to fail.
+//        //fail("The test case is a prototype.");
+//    }
+//
+//    /**
+//     * Test of editar method, of class Todo.
+//     */
+//    @Test
+//    public void testEditar() {
+//        System.out.println("editar");
+//        Lista listaEditar = null;
+//        Todo instance = new Todo();
+//        instance.editar(listaEditar);
+//        // TODO review the generated test code and remove the default call to fail.
+//        //fail("The test case is a prototype.");
+//    }
     
 }
